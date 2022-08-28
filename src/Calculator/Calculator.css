@@ -1,0 +1,118 @@
+.container {
+	width: 55%;
+	align-self: center;
+	justify-self: center;
+	background: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	display: grid;
+	gap: 25px;
+	color: #30195f;
+}
+
+.top {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: start;
+	align-items: center;
+	gap: 20px;
+}
+
+.heading {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+.reset-btn {
+	width: 150px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	background: #ffc4c8;
+	font-size: 1.1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.instructions {
+	line-height: 25px;
+}
+
+.values {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+	gap: 10px;
+}
+
+.value-inputs {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 45% 55%;
+	height: 60px;
+	font-size: 1.25em;
+}
+
+.value-inputs label {
+	background: #dce4ff;
+	display: grid;
+	align-content: center;
+	padding-left: 10px;
+	border-radius: 5px 0 0 5px;
+}
+
+.value-inputs input {
+	width: 100%;
+	background: #beceff;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	font-weight: bold;
+	font-size: 1.25em;
+	text-align: center;
+	padding: 0;
+}
+
+.value-inputs input:focus {
+	outline: none;
+}
+
+.calculate-btn {
+	width: 100%;
+	height: 60px;
+	border: none;
+	border-radius: 5px;
+	background: #75f1b3;
+	font-size: 1.25em;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+}
+
+.bottom {
+	display: grid;
+	gap: 20px;
+}
+
+.results {
+	display: grid;
+	grid-template-columns: repeat(6, 6fr);
+	gap: 15px;
+}
+
+.results-values {
+	display: grid;
+	gap: 10px;
+}
+.calculated-values {
+	display: grid;
+	align-items: center;
+	height: 60px;
+	width: 100%;
+	background: #dce4ff;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1.25em;
+	text-align: center;
+}
