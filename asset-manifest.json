@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nft-calculator/static/css/main.9e5c2621.css",
+    "main.js": "/nft-calculator/static/js/main.ea067c4c.js",
+    "index.html": "/nft-calculator/index.html",
+    "main.9e5c2621.css.map": "/nft-calculator/static/css/main.9e5c2621.css.map",
+    "main.ea067c4c.js.map": "/nft-calculator/static/js/main.ea067c4c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e5c2621.css",
+    "static/js/main.ea067c4c.js"
+  ]
+}
