@@ -9,19 +9,31 @@ const calculate = () => {
 	let B7 = document.getElementById("maintenance-input").value;
 	let B8 = document.getElementById("stakers-input").value;
 
-	let E4 = B2 / 10;
-	let E10 = Math.ceil(((E4 * (B5 * B6 * B3)) / (E4 * 3.5)) * 0.7);
-	let F10 = (B5 * B6 - B7) * 0.35;
-	let G10 = ((E10 / B3 + F10) / B2) * 100;
-	let H10 = F10 * B3;
-	let I10 = E10 + H10;
+	if (
+		B2 === "" ||
+		B3 === "" ||
+		B4 === "" ||
+		B5 === "" ||
+		B6 === "" ||
+		B7 === "" ||
+		B8 === ""
+	) {
+		alert("All field are mandatory!");
+	} else {
+		let E4 = B2 / 10;
+		let E10 = Math.ceil(((E4 * (B5 * B6 * B3)) / (E4 * 3.5)) * 0.7);
+		let F10 = (B5 * B6 - B7) * 0.35;
+		let G10 = ((E10 / B3 + F10) / B2) * 100;
+		let H10 = F10 * B3;
+		let I10 = E10 + H10;
 
-	document.getElementById("sale-results").innerHTML = "$" + E10;
-	document.getElementById("passive-results").innerHTML = "$" + F10;
-	document.getElementById("apy-results").innerHTML = G10 + "%";
-	document.getElementById("total-results").innerHTML = "$" + H10;
-	document.getElementById("roi-results").innerHTML = "$" + I10;
-	document.getElementById("nfts-results").innerHTML = E4;
+		document.getElementById("sale-results").innerHTML = "$" + E10;
+		document.getElementById("passive-results").innerHTML = "$" + F10;
+		document.getElementById("apy-results").innerHTML = G10 + "%";
+		document.getElementById("total-results").innerHTML = "$" + H10;
+		document.getElementById("roi-results").innerHTML = "$" + I10;
+		document.getElementById("nfts-results").innerHTML = E4;
+	}
 };
 
 const reset = () => {
@@ -59,19 +71,19 @@ export const Calculator = () => {
 					<label className="asset-label" for="asset-input">
 						Asset Value:
 					</label>
-					<input type="text" id="asset-input" />
+					<input type="number" id="asset-input" />
 				</div>
 				<div className="usage value-inputs">
 					<label className="usage-label" for="usage-input">
 						Usage Days Per Year:
 					</label>
-					<input type="text" id="usage-input" />
+					<input type="number" id="usage-input" />
 				</div>
 				<div className="contract value-inputs">
 					<label className="contract-label" for="contract-input">
 						Contract Years:
 					</label>
-					<input type="text" id="contract-input" />
+					<input type="number" id="contract-input" />
 				</div>
 				<div className="maintenance value-inputs">
 					<label
@@ -80,25 +92,25 @@ export const Calculator = () => {
 					>
 						Yearly Maintenance:
 					</label>
-					<input type="text" id="maintenance-input" />
+					<input type="number" id="maintenance-input" />
 				</div>
 				<div className="years value-inputs">
 					<label className="years-label" for="years-input">
 						Years Remaining:
 					</label>
-					<input type="text" id="years-input" />
+					<input type="number" id="years-input" />
 				</div>
 				<div className="stakers value-inputs">
 					<label className="stakers-label" for="stakers-input">
 						Number of Stakers:
 					</label>
-					<input type="text" id="stakers-input" />
+					<input type="number" id="stakers-input" />
 				</div>
 				<div className="rent value-inputs">
 					<label className="rent-label" for="rent-input">
 						Daily Rent of Asset:
 					</label>
-					<input type="text" id="rent-input" />
+					<input type="number" id="rent-input" />
 				</div>
 				<div className="calculate">
 					<button className="calculate-btn" onClick={calculate}>
