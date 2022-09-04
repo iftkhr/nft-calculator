@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nft-calculator/static/css/main.3c289da4.css",
-    "main.js": "/nft-calculator/static/js/main.1951ad69.js",
+    "main.js": "/nft-calculator/static/js/main.8f32ef0d.js",
     "index.html": "/nft-calculator/index.html",
     "main.3c289da4.css.map": "/nft-calculator/static/css/main.3c289da4.css.map",
-    "main.1951ad69.js.map": "/nft-calculator/static/js/main.1951ad69.js.map"
+    "main.8f32ef0d.js.map": "/nft-calculator/static/js/main.8f32ef0d.js.map"
   },
   "entrypoints": [
     "static/css/main.3c289da4.css",
-    "static/js/main.1951ad69.js"
+    "static/js/main.8f32ef0d.js"
   ]
 }
