@@ -20,10 +20,10 @@ const calculate = () => {
 	) {
 		alert("All field are mandatory!");
 	} else {
-		let E4 = B2 / 10;
-		let E10 = Math.ceil(((E4 * (B5 * B6 * B3)) / (E4 * 3.5)) * 0.7);
-		let F10 = (B5 * B6 - B7) * 0.35;
-		let G10 = ((E10 / B3 + F10) / B2) * 100;
+		let E4 = B2 / 500;
+		let E10 = Math.ceil(E4 * 87.5 * 0.8);
+		let F10 = Math.ceil((B5 * B6 - B7) * 0.5);
+		let G10 = ((E10 + F10) / B2) * 100;
 		let H10 = F10 * B3;
 		let I10 = E10 + H10;
 
